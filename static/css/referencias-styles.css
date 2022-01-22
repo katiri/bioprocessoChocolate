@@ -1,11 +1,11 @@
 #referencias {
     position: relative;
     margin-top: 400px;
-    padding: 100px 0px;
+    padding: 50px 0px;
+    overflow: hidden;
 }
 
 #referencias a {
     color: white;
-    font-size: 30px;
-    
+    font-size: 24px;
 }
