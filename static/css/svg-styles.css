@@ -58,3 +58,24 @@
 .onda-bottom .shape-fill {
     fill: #FFFFFF;
 }
+
+.ondas-top {
+    position: absolute;
+    top: -68px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.ondas-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+
+.ondas-top .shape-fill {
+    fill: rgb(114, 47, 0);
+}

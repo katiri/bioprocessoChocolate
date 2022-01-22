@@ -12,13 +12,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
         <link rel="stylesheet" href="static/css/geral-styles.css">
+        <link rel="stylesheet" href="static/css/carregando-styles.css">
         <link rel="stylesheet" href="static/css/animacao-styles.css">
         <link rel="stylesheet" href="static/css/svg-styles.css">
         <link rel="stylesheet" href="static/css/menu-styles.css">
         <link rel="stylesheet" href="static/css/banner-styles.css">
         <link rel="stylesheet" href="static/css/conteudo-styles.css">
+        <link rel="stylesheet" href="static/css/referencias-styles.css">
     </head>
     <body>
+        <div id="carregando">
+            <div class="spinner-border text-marrom"></div>
+        </div>
         <div class="container-fluid">
             <div class="row mb-5" id="banner">
                 <nav class="navbar navbar-expand-sm justify-content-center" id="menu">
@@ -55,7 +60,9 @@
                     </svg>
                 </div>
             </div>
-            <div class="row mb-5" id="oquee">
+        </div>
+        <div class="container-fluid" id="conteudo">
+            <div class="row" id="oquee">
                 <div class="col-md-9 mx-auto px-5">
                     <div class="row">
                         <div class="col-md text-center">
@@ -74,14 +81,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5 bg-marrom" id="historia">
+            <div class="row bg-marrom" id="historia">
                 <div class="onda-top">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
                     </svg>
                 </div>
 
-                <div class="col-md text-center px-5">
+                <div class="col-md-9 text-center mx-auto">
                     <p class="titulo-1 text-white">História</p>
                     <iframe class="video" src="https://www.youtube.com/embed/LfG8APQXkz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -92,26 +99,26 @@
                     </svg>
                 </div>
             </div>
-            <div class="row mb-5" id="fabricacao">
+            <div class="row" id="fabricacao">
                 <div class="col-md text-center">
                     <p class="titulo-1 text-marrom">Fabricação</p>
                     
                     <div class="row bg-marrom">
-                        <div class="col-md-8 text-left p-5 etapa">
+                        <div class="col-md-8 text-left p-5 etapa animar" style="--a:fadeIn;--t:2.5s;">
                             <p class="titulo-2 text-white">O Cacau</p>
                             <p class="texto text-white">
                                 O cacau é fruto do cacaueiro, essa árvore cresce em regiões tropicais demorando de 3 a 4 anos para se tornar frutífera, sendo possível realizar a colheita duas vezes por ano, mas como já foi dito, o que realmente nos interessa no cacau são suas sementes, que são retiradas do fruto após a colheita. Na imagem ao lado podemos ver como se parecem o fruto e as sementes do Cacau, que ainda no fruto, são envolvidas por uma polpa branca, que é rica em açucares.
                             </p>
                         </div>
                         <div class="col-md-4 imagem" id="cacau">
-                            <!-- <img src="static/images/cacau.jpg" width="100%"> -->
+                            <img src="static/images/comprimido/cacau.jpg">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 imagem" id="fermentando">
-                            <!-- <img src="static/images/cacau.jpg" width="100%"> -->
+                            <img src="static/images/comprimido/fermentando.jpg">
                         </div>
-                        <div class="col-md-8 text-left p-5 etapa">
+                        <div class="col-md-8 text-left p-5 etapa animar" style="--a:fadeIn;--t:2.5s;">
                             <p class="titulo-2 text-marrom">Fermentando</p>
                             <p class="texto">
                                 Depois de colher os grãos e a poupa, eles são misturados e colocados em grandes recipientes, tradicionalmente caixotes de madeira, que são cobertos com folhas de bananeira, isso faz com que seja possível controlar a umidade e a temperatura para que a fermentação ocorra da maneira esperada. O processo de fermentação do Cacau é diferente de outros tradicionais, pois ele ocorre naturalmente com microrganismos já presentes no ambiente, na polpa, nas sementes e principalmente na casca do fruto, esse processo pode demorar de 2 a 10 dias.
@@ -119,7 +126,7 @@
                         </div>
                     </div>
                     <div class="row bg-marrom">
-                        <div class="col-md-8 text-left p-5 etapa">
+                        <div class="col-md-8 text-left p-5 etapa animar" style="--a:fadeIn;--t:2.5s;">
                             <p class="titulo-2 text-white">Secagem e torra</p>
                             <p class="texto text-white">
                                 Após o termino da fermentação as sementes são recolhidas e colocadas para secar, um processo necessário para retirar a umidade das sementes, esse processo pode ocorrer naturalmente deixando as sementes ao sol, mas algumas industrias utilizam máquinas para fazer a secagem como um secador a vácuo rotativo.
@@ -128,14 +135,14 @@
                             </p>
                         </div>
                         <div class="col-md-4 imagem" id="secagem">
-                            <!-- <img src="static/images/cacau.jpg" width="100%"> -->
+                            <img src="static/images/comprimido/secagem.jpg">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 imagem" id="moagem">
-                            <!-- <img src="static/images/cacau.jpg" width="100%"> -->
+                            <img src="static/images/comprimido/moagem.jpg">
                         </div>
-                        <div class="col-md-8 text-left p-5 etapa">
+                        <div class="col-md-8 text-left p-5 etapa animar" style="--a:fadeIn;--t:2.5s;">
                             <p class="titulo-2 text-marrom">Moagem</p>
                             <p class="texto">
                                 Depois de torradas as sementes estão prontas para passar pelo processo de moagem, onde são prensadas e reduzidas a vários fragmentos, é a partir desse processo que a manteiga de cacau, que representa cerca de 50% da semente é separada.
@@ -145,21 +152,21 @@
                         </div>
                     </div>
                     <div class="row bg-marrom">
-                        <div class="col-md-8 text-left p-5 etapa">
+                        <div class="col-md-8 text-left p-5 etapa animar" style="--a:fadeIn;--t:2.5s;">
                             <p class="titulo-2 text-white">Mistura e conchagem</p>
                             <p class="texto text-white">
                                 Nessa fase os pedações de cacau integral, são misturados com outros ingredientes que variam de acordo com o tipo de chocolate, sendo misturado com manteiga de cacau, açúcar, as vezes leite etc, gerando uma nova massa, que é refinada e passa para o processo de conchagem, onde a mistura passa horas seguidas sendo processada em uma uma espécie de batedeira industrial, é nesse processo que a massa perde parte de sua acidez e umidade.
                             </p>
                         </div>
                         <div class="col-md-4 imagem" id="mistura">
-                            <!-- <img src="static/images/cacau.jpg" width="100%"> -->
+                            <img src="static/images/comprimido/mistura.jpg">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 imagem" id="moldagem">
-                            <!-- <img src="static/images/cacau.jpg" width="100%"> -->
+                            <img src="static/images/comprimido/moldagem.jpg">
                         </div>
-                        <div class="col-md-8 text-left p-5 etapa">
+                        <div class="col-md-8 text-left p-5 etapa animar" style="--a:fadeIn;--t:2.5s;">
                             <p class="titulo-2 text-marrom">Temperagem e moldagem</p>
                             <p class="texto">
                                 Por fim o chocolate passa por um processo minucioso de troca de temperaturas que faz com que os cristais de cacau e açúcar se estabilizem, qualquer erro nessa etapa pode ser prejudicial ao produto final.
@@ -170,12 +177,38 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5" id="bioprocesso">
+            <div class="row" id="bioprocesso">
                 <div class="col-md-9 text-center mx-auto px-5">
                     <p class="titulo-1 text-marrom">E o bioprocesso?</p>
                     <p class="texto">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sint aspernatur expedita, rem quibusdam ipsa quis? Tempore amet officia laboriosam nam fuga nobis ducimus corrupti quam pariatur veritatis! Nesciunt, saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus debitis similique earum eveniet provident ratione, nesciunt facere id repellendus inventore aliquam, velit distinctio ea sunt ipsam vero, odio temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quaerat fugiat ab facere nemo minus fugit aut sunt esse illo ex, deserunt voluptas sequi provident illum deleniti consequatur atque beatae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet cumque dolores provident pariatur. Alias culpa inventore magni iusto architecto quo. Labore molestiae vel sint sapiente praesentium, ex tempore alias facilis!
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row bg-marrom" id="referencias">
+                <div class="ondas-top">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <p class="titulo-2 text-white">Referências</p>
+
+                    <a target="_blank" href="https://www.infoescola.com/alimentos/chocolate/">https://www.infoescola.com/alimentos/chocolate/</a>
+                    <br>
+                    <a target="_blank" href="https://profissaobiotec.com.br/chocolate-o-exemplo-mais-delicioso-de-biotecnologia-classica/">https://profissaobiotec.com.br/chocolate-o-exemplo-mais-delicioso-de-biotecnologia-classica/</a>
+                    <br>
+                    <a target="_blank" href="https://biotecinova.com.br/a-biotecnologia-na-fabricacao-do-chocolate/">https://biotecinova.com.br/a-biotecnologia-na-fabricacao-do-chocolate/</a>
+                    <br>
+                    <a target="_blank" href="https://www.terra.com.br/noticias/brasil/em-oito-etapas-descubra-como-e-produzido-o-chocolate,6ebecabe9e28d310VgnVCM4000009bcceb0aRCRD.html">https://www.terra.com.br/noticias/brasil/em-oito-etapas-descubra-como-e-produzido-o-chocolate,6ebecabe9e28d310VgnVCM4000009bcceb0aRCRD.html</a>
+                    <br>
+                    <a target="_blank" href=""></a>
+                    <br>
                 </div>
             </div>
         </div>
@@ -186,5 +219,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
         <script src="static/javascript/animacao-scripts.js"></script>
+        <script src="static/javascript/carregando-scripts.js"></script>
     </body>
 </html>
