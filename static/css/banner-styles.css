@@ -1,0 +1,22 @@
+#banner {
+    background-image: url('../images/banner.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 46vmax;
+    position: relative;
+}
+
+#conteudo-banner {
+    padding: 0px 5%;
+    text-align: center;
+}
+
+#frase-banner {
+    color: white;
+    font-weight: 800;
+    font-size: 5.5vmax;
+
+    /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+    text-shadow: 5px 5px 2px black;
+}

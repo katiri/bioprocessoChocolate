@@ -1,0 +1,54 @@
+.texto {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.video {
+    width: 60vw;
+    height: 33.75vw;
+}
+
+#historia {
+    position: relative;
+    padding: 88px 0px;
+}
+
+/* #fabricacao img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+} */
+
+#fabricacao .imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+#fabricacao #cacau {
+    background-image: url('../images/cacau.jpg');
+}
+
+#fabricacao #fermentando {
+    background-image: url('../images/fermentando.jpg');
+}
+
+#fabricacao #secagem {
+    background-image: url('../images/secagem.jpg');
+}
+
+#fabricacao #moagem {
+    background-image: url('../images/moagem.jpg');
+}
+
+#fabricacao #mistura {
+    background-image: url('../images/mistura.jpg');
+}
+
+#fabricacao #moldagem {
+    background-image: url('../images/moldagem.jpg');
+}

@@ -1,0 +1,4 @@
+.animado {
+    animation: var(--a);
+    animation-duration: var(--t);
+}

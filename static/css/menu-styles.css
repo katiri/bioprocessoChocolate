@@ -1,0 +1,19 @@
+#menu {
+    background-color: rgba(158, 66, 0, 0.8);
+    width: 100%;
+    height: min-content;
+}
+
+#menu a {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#menu a:hover {
+    color: rgb(255, 163, 25);
+}
+
+#menu li {
+    padding: 0px 15px;
+}
